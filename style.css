@@ -250,11 +250,14 @@ footer{
 }
 /* mobile responsive */
 @media only screen and (max-width:700px) {
-    .container, .blogs, .products, .footer{
+    .container{
+        width: 40%;
+    }
+    .container, .blogs, .products, .footer, .animation{
         
         flex-direction: column;
     }
-    .half-width, .blogs, .products, .footer{
+    .half-width, .blogs, .products, .footer, .animation{
         grid-template-columns: repeat(1, 1fr);
         
     }
@@ -262,12 +265,15 @@ footer{
 
 /* Tablet Devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
-    .container, .products, .footer{
+    .container{
+        width: 60%;
+    }
+    .container, .products, .footer, .animation{
         
         flex-direction: column;
         
     }
-   .container, .blogs, .products{
+   .container, .blogs, .products, .animation{
         grid-template-columns: repeat(2, 1fr);
         
     }
