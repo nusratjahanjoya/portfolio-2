@@ -1,9 +1,11 @@
 /* Top-style */
 body{
     font-family: 'Poppins', sans-serif;
+    /* background-color:lightgreen; */
 }
 section{
     display: flex;
+    align-items: center;
 }
 .half-width{
     width: 50%;
@@ -43,8 +45,31 @@ section{
 .fa-star.empty{
     color: gainsboro;
 }
-/* last */
-.footer{
+footer{
     text-align: center;
-    background-color:lavender;
+    background-color: lightsteelblue;
+}
+/* mobile responsive */
+@media only screen and (max-width:700px) {
+    .container, .blogs, .products, .footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .half-width, .blogs, .products, .footer{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container, .blogs, .products, .footer{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+   .half-width, .blogs, .products{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 }
